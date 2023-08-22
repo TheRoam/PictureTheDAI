@@ -16,7 +16,7 @@ Follow my twitter bot [@ThRoWtrw](https://twitter.com/ThRoWtrw/status/1670879416
   - **Real-ESRGAN** upscaling by xinntao
   - Twitter API v1 upload and post using **tweepy**.
 
-## Requirementes
+## Requirements
 Those of Stable Diffussion v1.5:
   - Python3
   - Nvidia graphics card with CUDA drivers and > 4 GB RAM
