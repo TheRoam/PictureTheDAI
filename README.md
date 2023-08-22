@@ -14,7 +14,7 @@ Follow my twitter bot [@ThRoWtrw](https://twitter.com/ThRoWtrw/status/1670879416
   - Random prompt generation using gpt2-based **Magic Prompt** by Gustavosta
   - **Stable Diffusion v1.5** optimized generation for < 8GB RAM
   - **Real-ESRGAN** upscaling by xinntao
-  - Twitter API v1 upload and post using **twurl**.
+  - Twitter API v1 upload and post using **tweepy**.
 
 ## Requirementes
 Those of Stable Diffussion v1.5:
@@ -70,7 +70,7 @@ _Handles image upscaling_
   - Calls the upcale script.
   - Returns upscaled image to **results** folder
 **7. sd-randtweet/tweet.py**
-_Runs the twitter API using twurl_
+_Runs the twitter API using tweepy_
   - Authorizes account
   - Uploads image to Twitter
   - Grabs media code
