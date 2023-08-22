@@ -20,6 +20,7 @@ Follow my twitter bot [@ThRoWtrw](https://twitter.com/ThRoWtrw/status/1670879416
 Those of Stable Diffussion v1.5:
   - Python3
   - Nvidia graphics card with CUDA drivers and > 4 GB RAM
+  - Recommended Linux OS for compatibility with bash scripts
 
 Mine runs in an **Nvidia Jetson Xavier** which is nothing but friendly, so apologies in advance for the workarounds.
 
@@ -32,7 +33,7 @@ sudo sync && echo 3 | sudo tee /proc/sys/vm/drop_caches***
 ```
 
 ## Cycle workflow
-Cycles take place every ~3 hours: at 3, 6, 12, 15, 18, 21 and 24.
+Cycles take place every ~3 hours: at 3, 6, 12, 15, 18, 21 and 24 (UTC+2)
 
 Every cycle runs as follows:
 
