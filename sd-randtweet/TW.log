@@ -1,0 +1,14 @@
+'Spectacular heavenly dawn supernova in the background, hard science fiction painting by Greg Rutkowski, winning award masterpiece, fantastic artwork, aesthetically inspired by beksinski and dan mumford, Trending on Artstation, cinematic lighting fro' using Magic-Prompt.
+
+Done in Stable Diffusion using Realistic Vision v5 checkpoint and upscaled with Real-ESRGAN
+{'text': '#PictureTheDAI No.261\n\n🌌 Nighty nights!\n\n#PromptInALT\n\nAutomatically generated in a Jetson Xavier\n\n#AIArt #AIArtCommunity #StableDiffusion', 'reply': {'in_reply_to_tweet_id': '1670879416904216595'}, 'media': {'media_ids': ['1694076628928720897']}}
+Response code: 201
+{
+    "data": {
+        "edit_history_tweet_ids": [
+            "1694076636084285806"
+        ],
+        "id": "1694076636084285806",
+        "text": "#PictureTheDAI No.261\n\n\ud83c\udf0c Nighty nights!\n\n#PromptInALT\n\nAutomatically generated in a Jetson Xavier\n\n#AIArt #AIArtCommunity #StableDiffusion https://t.co/bum1J8Ynm1"
+    }
+}
