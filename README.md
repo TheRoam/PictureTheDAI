@@ -49,6 +49,7 @@ _Handles the image generation_
   - Calls the image generator with the prompt
   - Reinstalls torch if it fails, and retries
   - Calls the upscaler with the generated image
+
 **3. gpt-prompt/randP.sh**
   _Handles the prompt generator_
   - Reads the current hour of the day
@@ -56,19 +57,23 @@ _Handles the image generation_
   - Chooses a random prompt start from the list according to the time of the day
   - Using Magic Prompt, generates a Stable Diffusion prompt from the random prompt start
   - Reinstalls dependencies if it fails, and retries
+
 **4. gpt-prompt/prompt.py**
   _Runs Magic Prompt_
   - Uses the prompt start and a random seed to generate a Stable Diffusion prompt.
+
 **5. stable-diffusion/diff.py**
   _Runs Stable Diffusion_
   - Uses the generated prompt to run Stable Diffusion v1.5 with low resources
   - Model: Realistic Vision v5
   - Optimizations: fp16 model variant + sequential cpu offload
+
 **6. sd-randtweet/upscale.sh**
 _Handles image upscaling_
   - Calls the proper environment
   - Calls the upcale script.
   - Returns upscaled image to **results** folder
+
 **7. sd-randtweet/tweet.py**
 _Runs the twitter API using tweepy_
   - Authorizes account
