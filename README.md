@@ -8,7 +8,7 @@ Follow my twitter bot [@ThRoWtrw](https://twitter.com/ThRoWtrw/status/1670879416
 ![Merge1](https://github.com/TheRoam/PictureTheDAI/assets/63456390/3d3ddc73-3ba0-4f17-9a83-1b17f808db98)
 ![Merge2](https://github.com/TheRoam/PictureTheDAI/assets/63456390/a52e338e-0940-4818-a66c-5a1c428beb0c)
 
-I'm not a professional programmer, so any errors, feedback or improvements, let me know by opening an issue 🧏‍♂️
+ℹ️I'm not a professional programmer, so any errors, feedback or improvements, let me know by opening an issue 🧏‍♂️
 
 ## Features
   - Random prompt generation using gpt2-based **Magic Prompt** by Gustavosta
