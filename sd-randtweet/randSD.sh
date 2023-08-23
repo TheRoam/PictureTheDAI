@@ -128,11 +128,15 @@ fi
 
 echo "--Clearing final cache"
 sudo sync && echo 3 | sudo tee /proc/sys/vm/drop_caches***
-
-echo "--Process completed successfully!"
-
+#Update job No
 j=$(cat job)
 echo "Updating job No."$j
 echo $(($j+1)) > job
 j=$(cat job)
 echo "now No."$j
+
+#Copy and save image
+echo "Saving image in /results/image_"$j".png" 
+cp $dir/results/image_out.png $dir/results/image_$j.png
+
+echo "--Process completed successfully!"
