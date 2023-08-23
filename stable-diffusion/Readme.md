@@ -10,6 +10,8 @@ This folders holds the environment for stable diffusion image generation using t
 python3 -m venv sdAI
 
 source sdAI/bin/activate
+
+pip3 install pip --upgrade
 ```
 
 - Install torch with CUDA, whichever way fits your machine
