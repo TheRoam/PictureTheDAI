@@ -24,9 +24,8 @@ source gptP/bin/activate
 pip3 install pip --upgrade
 ```
 
-- Install torch with CUDA, whichever way fits your machine
-- For Jetson Xavier NX JetPack 5.0.2 we can use **reinstall.sh** script:
+- Install dependencies: **torch** and **transformers**
 
 ```
-bash ~/Documents/torch/reinstall.sh
+pip3 install transformers torch
 ```
