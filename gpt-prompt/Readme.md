@@ -8,6 +8,12 @@ This folders holds the environment for random prompt generation using Magic Prom
 - **prompt.py** runs Magic Prompt
 
 ## Installation
+- Install rust compiler
+
+_(needed for safetensors in JetPack 5.0.2, you may not need it)_
+```
+sudo apt-get install rustc cargo
+```
 - Create python environment
 
 ```
