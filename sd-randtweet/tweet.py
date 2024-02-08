@@ -28,7 +28,7 @@ txt=opt.txt
 job=opt.job
 msg=opt.msg
 
-altTxt="'"+txt+"'"+" using Magic-Prompt.\n\nDone in Stable Diffusion using Realistic Vision v5 checkpoint and upscaled with Real-ESRGAN"
+altTxt="'"+txt+"'"+" using Magic-Prompt.\n\nDone in ComfyUI using Realistic Vision v6.0 B1 checkpoint and upscaled with Real-ESRGAN"
 
 print(altTxt)
 
