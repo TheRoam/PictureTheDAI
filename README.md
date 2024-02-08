@@ -15,6 +15,7 @@ Follow my twitter bot [@ThRoWtrw](https://twitter.com/ThRoWtrw/status/1670879416
   - **Stable Diffusion v1.5** optimized generation for < 8GB RAM
   - **Real-ESRGAN** upscaling by xinntao
   - Twitter API upload and post using **tweepy**.
+
     **2024 UPDATE**
   - Image generation now uses **ComfyUI**.
 
