@@ -1,28 +1,19 @@
 ## Description
-This folders holds the environment for stable diffusion image generation using the previously generated prompt.
+This folders holds the environment for ComfyUI image generation using the previously generated prompt.
 
-- **diff.py** runs Stable Diffusion with low-ram optimizations
-
-## Installation
+## Installation for ComfyUI
 - Create python environment
 
 ```
-python3 -m venv sdAI
+python3 -m venv comfyAI
 
-source sdAI/bin/activate
+source comfyAI/bin/activate
 
 pip3 install pip --upgrade
-```
-
-- Install torch with CUDA, whichever way fits your machine
-- For Jetson Xavier NX JetPack 5.0.2 see the script in the **torch** folder:
-
-```
-bash ~/Documents/torch/install_torch.sh
 ```
 
 - Install dependencies
 
 ```
-pip3 install -r requirements.txt
+bash reinstallComfy.sh
 ```
