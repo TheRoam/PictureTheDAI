@@ -46,7 +46,7 @@ Every cycle runs as follows:
   - Then calls the twitter upload script
   - Finally, goes to sleep until next loop.
 
-**2. sd-randtweet/randSD.sh**
+**2. sd-randtweet/randComfy.sh**
 _Handles the image generation_
   - Calls the prompt generator
   - Reinstalls torch if it fails, and retries
@@ -66,11 +66,10 @@ _Handles the image generation_
   _Runs Magic Prompt_
   - Uses the prompt start and a random seed to generate a Stable Diffusion prompt.
 
-**5. stable-diffusion/diff.py**
-  _Runs Stable Diffusion_
-  - Uses the generated prompt to run Stable Diffusion v1.5 with low resources
-  - Model: Realistic Vision v5
-  - Optimizations: fp16 model variant + sequential cpu offload
+**5. stable-diffusion/ComfyUI/main.py**
+  _Runs ComfyUI server_
+  - The ComfyUI server receives the generated prompt.
+  - Model: Realistic Vision v6.0 B1
 
 **6. sd-randtweet/upscale.sh**
 _Handles image upscaling_
