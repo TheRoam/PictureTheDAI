@@ -103,6 +103,31 @@
     "_meta": {
       "title": "Save Image"
     }
+  },
+  "14": {
+    "inputs": {
+      "upscale_model": [
+        "15",
+        0
+      ],
+      "image": [
+        "8",
+        0
+      ]
+    },
+    "class_type": "ImageUpscaleWithModel",
+    "_meta": {
+      "title": "Upscale Image (using Model)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "model_name": "realesr-general-x4v3.pth"
+    },
+    "class_type": "UpscaleModelLoader",
+    "_meta": {
+      "title": "Load Upscale Model"
+    }
   }
 }
 }
