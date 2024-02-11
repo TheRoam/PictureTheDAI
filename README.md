@@ -13,7 +13,7 @@ Follow my twitter bot [@ThRoWtrw](https://twitter.com/ThRoWtrw/status/1670879416
 ## Features
   - Random prompt generation using gpt2-based **Magic Prompt** by Gustavosta
   - **Stable Diffusion v1.5** optimized generation for < 8GB RAM
-  - **Real-ESRGAN** upscaling by xinntao
+  - **Real-ESRGAN** upscaling by xinntao integrated in **ComfyUI**
   - Twitter API upload and post using **tweepy**.
 
     **2024 UPDATE**
