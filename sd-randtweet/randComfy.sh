@@ -74,7 +74,7 @@ head -53 /home/enano/Documents/stable-diffusion/Comfy-template.json | tail +5 >>
 echo '      "text": "'$p'",' >> $config
 
 #Write remaining file
-tail -54 /home/enano/Documents/stable-diffusion/Comfy-template.json >> $config
+tail -79 /home/enano/Documents/stable-diffusion/Comfy-template.json >> $config
 
 #Send config to ComfyUI
 echo "--Launching ComfyUI generation"
@@ -104,42 +104,15 @@ sudo sync && echo 3 | sudo tee /proc/sys/vm/drop_caches***
 
 #Upscale image
 #rm ./results/image_out.png
-echo "--Upscaling image"
+#echo "--Upscaling image"
 
-bash upscale.sh
+#bash upscale.sh
+
+#Image upscaled in ComyUI, just copy to results folder
+
+cp image.png ./results/image_out.png
 
 img=$(ls ./results | grep "image_out.png")
-
-if [[ $img = "image_out.png" ]]
-then
-        echo "Success! Image exists"
-else
-        echo "ERROR!! No image created"
-        echo "Clearing cache"
-        #bash clear_cache.sh
-	sudo sync && echo 3 | sudo tee /proc/sys/vm/drop_caches***
-        #echo "Reinstalling torch"
-	#rm -rf ~/.local/lib/python*
-        #bash /home/enano/Documents/torch/install_torch.sh
-        echo "Retrying upscaling"
-        bash upscale.sh
-
-
-        img=$(ls | grep "image_out.png")
-        if [[ $img = "image_out.png" ]]
-        then
-                echo "Success! Image exists"
-        else
-                echo "ERROR!! No image created"
-                echo "Cancelling operation. Revise whats wrong!"
-		sudo sync && echo 3 | sudo tee /proc/sys/vm/drop_caches***
-                exit
-        fi
-fi
-
-echo "--Clearing final cache"
-#bash clear_cache.sh
-sudo sync && echo 3 | sudo tee /proc/sys/vm/drop_caches***
 
 #Update job number
 j=$(cat job)
